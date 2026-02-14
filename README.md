@@ -93,7 +93,7 @@ Or click **Run ▶️** if you are using GoLand IDE.
 Use the Postman collection to test endpoints and calculate expressions.
 
 👉 **Postman Collection Link:**
-`https://github.com/yaho-ma/go-http-server/blob/main/Go%20Calculator%20API.postman_collection.json`
+[link](https://github.com/yaho-ma/go-http-server/blob/main/Go%20Calculator%20API.postman_collection.json)
 
 
 
