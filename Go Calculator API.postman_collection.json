@@ -1,0 +1,107 @@
+{
+  "info": {
+    "_postman_id": "daa056e7-7056-4f34-845c-abd2ac594993",
+    "name": "Go Calculator API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "50254997",
+    "_collection_link": "https://go.postman.co/collection/50254997-daa056e7-7056-4f34-845c-abd2ac594993?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Get all calculations",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/calculations",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "calculations"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create new calculation",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"expression\": \"15+88+999\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/calculations",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "calculations"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update calculation",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"expression\": \"9+9\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/calculations/a76e1abe-28da-4fd4-956b-0742add48d63",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "calculations",
+            "a76e1abe-28da-4fd4-956b-0742add48d63"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete calculation",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/calculations/3b85dd12-6bc8-47b9-917e-ebb2b644b74d",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "calculations",
+            "3b85dd12-6bc8-47b9-917e-ebb2b644b74d"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
